@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أساسيات تطوير الويب - الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- رأس الصفحة مع الشعار -->
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="شعار الكلية" class="college-logo">
+                <div class="logo-text">
+                    <h1>كلية تربية نوعية</h1>
+                    <p> تكنولوجيا تعليم رقمى</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> المعلومات الشخصية</a></li>
+                <li><a href="#html-section"><i class="fab fa-html5"></i> HTML</a></li>
+                <li><a href="#css-section"><i class="fab fa-css3-alt"></i> CSS</a></li>
+                <li><a href="#js-section"><i class="fab fa-js"></i> JavaScript</a></li>
+                <li><a href="#comparison"><i class="fas fa-code-compare"></i> Java vs JavaScript</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- المحتوى الرئيسي -->
+    <main class="container">
+        <!-- قسم المقدمة -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>مرحباً بكم في دورة أساسيات تطوير الويب</h2>
+                <p>هذا الموقع يقدم شرحاً مبسطاً للغات الأساسية في تطوير الويب مع مقارنة بين Java و JavaScript</p>
+                <div class="hero-badges">
+                    <span class="badge html">HTML</span>
+                    <span class="badge css">CSS</span>
+                    <span class="badge js">JavaScript</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- قسم HTML -->
+        <section id="html-section" class="content-section">
+            <div class="section-header">
+                <i class="fab fa-html5 section-icon html-icon"></i>
+                <h2>لغة HTML</h2>
+            </div>
+            <div class="section-content">
+                <div class="content-text">
+                    <h3>ما هي HTML؟</h3>
+                    <p>HTML (لغة ترميز النص التشعبي) هي العمود الفقري لأي موقع ويب. تستخدم لإنشاء هيكل صفحات الويب وتحديد العناصر المختلفة مثل العناوين والفقرات والصور والروابط.</p>
+                    
+                    <h3>الأساسيات:</h3>
+                    <ul>
+                        <li>HTML تعني HyperText Markup Language</li>
+                        <li>ليست لغة برمجة، بل لغة ترميز</li>
+                        <li>تتكون من عناصر (Elements) تحيط بالمحتوى</li>
+                        <li>كل عنصر له وسم فتح ووسم إغلاق</li>
+                    </ul>
+                    
+                    <div class="code-example">
+                        <h4>مثال على كود HTML:</h4>
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;عنوان الصفحة&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;مرحباً بالعالم!&lt;/h1&gt;
+    &lt;p&gt;هذه هي أول صفحة ويب لي.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </div>
+                </div>
+                <div class="content-image">
+                    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="صورة HTML">
+                </div>
+            </div>
+        </section>
+        
+        <!-- قسم CSS -->
+        <section id="css-section" class="content-section">
+            <div class="section-header">
+                <i class="fab fa-css3-alt section-icon css-icon"></i>
+                <h2>لغة CSS</h2>
+            </div>
+            <div class="section-content reverse">
+                <div class="content-image">
+                    <img src="https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="صورة CSS">
+                </div>
+                <div class="content-text">
+                    <h3>ما هي CSS؟</h3>
+                    <p>CSS (أوراق الأنماط المتتالية) هي لغة تستخدم لوصف مظهر وترتيب صفحات الويب. تتحكم في الألوان والخطوط والمسافات والتصميم العام.</p>
+                    
+                    <h3>الأساسيات:</h3>
+                    <ul>
+                        <li>CSS تعني Cascading Style Sheets</li>
+                        <li>تستخدم لتنسيق وتجميل صفحات HTML</li>
+                        <li>تعمل على مبدأ الانتقالية والتوريث</li>
+                        <li>يمكن كتابتها داخلياً أو خارجياً</li>
+                    </ul>
+                    
+                    <div class="code-example">
+                        <h4>مثال على كود CSS:</h4>
+                        <pre><code>body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h1 {
+    color: #0066cc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- قسم JavaScript -->
+        <section id="js-section" class="content-section">
+            <div class="section-header">
+                <i class="fab fa-js-square section-icon js-icon"></i>
+                <h2>لغة JavaScript</h2>
+            </div>
+            <div class="section-content">
+                <div class="content-text">
+                    <h3>ما هي JavaScript؟</h3>
+                    <p>JavaScript هي لغة برمجة تستخدم لجعل صفحات الويب تفاعلية. تمكنك من إنشاء محتوى ديناميكي، تحكم في الوسائط المتحركة، وتتفاعل مع المستخدم.</p>
+                    
+                    <h3>الأساسيات:</h3>
+                    <ul>
+                        <li>لغة برمجة عالية المستوى ومفسرة</li>
+                        <li>تستخدم على جانب العميل (Client-side)</li>
+                        <li>تدعم البرمجة كائنية التوجه (OOP)</li>
+                        <li>يمكن استخدامها أيضاً على جانب الخادم (Node.js)</li>
+                    </ul>
+                    
+                    <div class="code-example">
+                        <h4>مثال على كود JavaScript:</h4>
+                        <pre><code>// تغيير نص العنصر عند النقر عليه
+document.getElementById("myButton").onclick = function() {
+    document.getElementById("demo").innerHTML = "تم النقر!";
+};
+
+// دالة بسيطة لجمع عددين
+function addNumbers(a, b) {
+    return a + b;
+}
+
+// استدعاء الدالة
+let result = addNumbers(5, 3);
+console.log("الناتج: " + result);</code></pre>
+                    </div>
+                </div>
+                <div class="content-image">
+                    <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="صورة JavaScript">
+                </div>
+            </div>
+        </section>
+        
+        <!-- قسم المقارنة -->
+        <section id="comparison" class="content-section comparison-section">
+            <div class="section-header">
+                <i class="fas fa-code-compare section-icon comparison-icon"></i>
+                <h2>مقارنة بين Java و JavaScript</h2>
+            </div>
+            <div class="comparison-content">
+                <div class="comparison-card java-card">
+                    <div class="card-header">
+                        <i class="fab fa-java"></i>
+                        <h3>لغة Java</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>النوع:</strong> لغة برمجة كائنية التوجه</li>
+                            <li><strong>الاستخدام:</strong> تطبيقات سطح المكتب، تطبيقات الويب الخلفية، تطبيقات Android</li>
+                            <li><strong>التنفيذ:</strong> تحتاج إلى JVM (Java Virtual Machine)</li>
+                            <li><strong>النمط:</strong> لغة مكتوبة بقوة (Strongly Typed)</li>
+                            <li><strong>البناء:</strong> تحتاج إلى تجميع (Compilation)</li>
+                            <li><strong>الأداء:</strong> أسرع بشكل عام</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="comparison-card vs-card">
+                    <div class="card-header">
+                        <i class="fas fa-versus"></i>
+                        <h3>الفرق</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>على الرغم من تشابه الاسمين، إلا أن Java و JavaScript لغتان مختلفتان تماماً:</p>
+                        <ul>
+                            <li>Java لغة برمجة مستقلة، JavaScript لغة برمجة نصية للويب</li>
+                            <li>Java تحتاج إلى تجميع، JavaScript مفسرة مباشرة في المتصفح</li>
+                            <li>Java تستخدم لبناء تطبيقات كاملة، JavaScript تستخدم لجعل صفحات الويب تفاعلية</li>
+                            <li>Java لها أنواع بيانات صارمة، JavaScript لها أنواع بيانات ديناميكية</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="comparison-card javascript-card">
+                    <div class="card-header">
+                        <i class="fab fa-js-square"></i>
+                        <h3>لغة JavaScript</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>النوع:</strong> لغة برمجة نصية (Scripting)</li>
+                            <li><strong>الاستخدام:</strong> صفحات الويب التفاعلية، تطبيقات الويب، تطبيقات الهاتف (React Native)</li>
+                            <li><strong>التنفيذ:</strong> تعمل مباشرة في المتصفح</li>
+                            <li><strong>النمط:</strong> لغة مكتوبة بشكل ديناميكي (Dynamically Typed)</li>
+                            <li><strong>البناء:</strong> لا تحتاج إلى تجميع</li>
+                            <li><strong>الأداء:</strong> أسرع في التطوير</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- جدول المقارنة -->
+        <section class="comparison-table-section">
+            <h3>جدول مقارنة مفصّل</h3>
+            <div class="table-container">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>النقطة</th>
+                            <th>Java</th>
+                            <th>JavaScript</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>سنة الإصدار</td>
+                            <td>1995</td>
+                            <td>1995</td>
+                        </tr>
+                        <tr>
+                            <td>المطور</td>
+                            <td>شركة Sun Microsystems</td>
+                            <td>شركة Netscape</td>
+                        </tr>
+                        <tr>
+                            <td>نوع اللغة</td>
+                            <td>لغة برمجة كائنية التوجه</td>
+                            <td>لغة برمجة نصية للويب</td>
+                        </tr>
+                        <tr>
+                            <td>طريقة التنفيذ</td>
+                            <td>مجمعة وتعمل على JVM</td>
+                            <td>مفسرة في المتصفح</td>
+                        </tr>
+                        <tr>
+                            <td>الاستخدام الأساسي</td>
+                            <td>تطبيقات Android، تطبيقات المؤسسات</td>
+                            <td>تطوير واجهات الويب التفاعلية</td>
+                        </tr>
+                        <tr>
+                            <td>إدارة الذاكرة</td>
+                            <td>تلقائية عبر Garbage Collector</td>
+                            <td>تلقائية أيضاً</td>
+                        </tr>
+                        <tr>
+                            <td>نظام الأنواع</td>
+                            <td>ثابت (Static Typing)</td>
+                            <td>ديناميكي (Dynamic Typing)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/logo.png" alt="شعار الكلية" class="footer-logo-img">
+                    <p>كلية تربية نوعية</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">المعلومات الشخصية</a></li>
+                        <li><a href="#html-section">HTML</a></li>
+                        <li><a href="#css-section">CSS</a></li>
+                    </ul>
+                </div>
+             
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 كلية تربية نوعية - تكنولوجيا تعليم - جميع الحقوق محفوظة | مشروع تصميم موقع ب HTML</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- زر للعودة للأعلى -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    
+    <script src="script.js"></script>
+</body>
+</html>
